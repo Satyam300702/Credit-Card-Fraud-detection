@@ -10,7 +10,7 @@ import numpy as np
 import streamlit as st
 import pickle
 
-model_path = os.path.join(os.path.dirname(__file__),"fraud.sav")
+model_path = os.path.join(os.path.dirname(__file__),"Fraud.sav")
 try:
     fraud = pickle.load(open(model_path,"rb"))
 except FileNotFoundError:
